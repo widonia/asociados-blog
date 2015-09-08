@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{asset "css/font-awesome.min.css"}}">
+	<link rel="stylesheet" href="{{asset "css/screen.css"}}">
+	<link rel="stylesheet" href="{{asset "css/custom.css"}}">
+</head>
+{{ghost_head}}
+
+{{navigation}}
+
+<body class="{{body_class}}">
+
+	{{{body}}}
+
+	<footer class="blog-footer">
+		<div class="inner">
+			<p> <a href="http://asociados.com.co">asociados App</a></p>
+		</div>
+	</footer>
+
+	{{ghost_foot}}
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<script>
+		//Menu Toggle
+		$("#icon").click(function() {
+			console.log("Click");
+		    $(this).toggleClass("active");
+	        $("#menu").fadeToggle();
+        });
+		//Code Highlighter
+        $(document).ready(function() {
+          $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+        //Google Analytics
+	</script>
+</body>
+</html>
