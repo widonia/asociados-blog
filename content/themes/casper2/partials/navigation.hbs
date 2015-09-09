@@ -1,17 +1,9 @@
-<nav>
-	<div class="toggle-menu">
-	    <div id="icon">
-	        <div class="one"></div>
-	        <div class="two"></div>
-	        <div class="three"></div>
-	    </div>
-
-	    <div id="menu">
-	        <ul>
-				{{#foreach navigation}}
-					<li role="presentation"><a href="{{url absolute="true"}}"><span>{{label}}</span></a></li>
-		        {{/foreach}}	            
-	        </ul>
-	    </div>
-	 </div>
+<nav class="main-nav">
+	<div >
+        <ul>
+			{{#foreach navigation}}
+				<li role="presentation"><a href="{{url absolute="true"}}"><span>{{label}}</span></a></li>
+	        {{/foreach}}
+        </ul>
+    </div>
 </nav>

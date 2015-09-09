@@ -15,28 +15,30 @@
 </head>
 {{ghost_head}}
 
-{{navigation}}
 
-<body class="{{body_class}}">
 
-	{{{body}}}
+<body class="{{body_class}} nav-closed">
+	{{navigation}}
 
-	<footer class="blog-footer">
-		<div class="inner">
-			<p> <a href="http://asociados.com.co">asociados App</a></p>
-		</div>
-	</footer>
+	<div class="site-wrapper">
+		{{{body}}}
+		<footer class="blog-footer">
+			<div class="inner">
+				<p> <a href="http://asociados.com.co">asociados App</a></p>
+			</div>
+		</footer>
+	</div>
 
 	{{ghost_foot}}
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
 	<script>
 		//Menu Toggle
 		$("#icon").click(function() {
 			console.log("Click");
 		    $(this).toggleClass("active");
 	        $("#menu").fadeToggle();
+			$("body").toggleClass("nav-opened nav-closed");
         });
 		//Code Highlighter
         $(document).ready(function() {
@@ -44,7 +46,9 @@
             hljs.highlightBlock(block);
           });
         });
+
         //Google Analytics
+
 	</script>
 </body>
 </html>

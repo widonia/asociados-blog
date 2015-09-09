@@ -1,4 +1,50 @@
 .second-header {
-    height: 90%;
-    padding: 10px;  
+    padding: 0 0 0 0;
 }
+
+
+.second-header .title  {
+    border-bottom: none;
+}
+
+.second-header .title h1 {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  /*transition: color 0.5s ease-in-out;*/
+}
+
+
+.second-header  .logo {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.3em;
+  transition: all 0.25s ease-in;
+ -webkit-animation: slideDown 1s ease;
+ -moz-animation: slideDown 1s ease;
+ -o-animation: slideDown 1s ease;
+ animation: slideDown 1s ease;
+ visibility: visible !important; }
+
+
+.second-header  .logo:hover{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-animation: rotate(360deg);
+    -o-animation:rotate(360deg);
+ }
+
+ /*body.nav-opened .site-wrapper {
+     overflow-x: hidden;
+     -webkit-transform: translate3D(-240px, 0, 0);
+         -ms-transform: translate3D(-240px, 0, 0);
+             transform: translate3D(-240px, 0, 0);
+     -webkit-transition: -webkit-transform 0.3s ease;
+             transition: transform 0.3s ease;
+ }*/
