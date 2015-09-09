@@ -1,0 +1,35 @@
+{{!< default}}
+
+{{#author}}
+	{{>"header"}}
+
+	<section class="posts">
+		<article class="{{post_class}}">
+			<div class="inner">
+				<header class="header-post">
+					<h2 class="title-post">{{name}}</h2>
+					{{#if image}}
+					<figure class="author-image">
+						<div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+					</figure>
+					{{/if}}
+				</header>
+
+				<section class="content-post">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					{{#if bio}}
+						<h2 class="author-bio">{{bio}}</h2>
+					{{/if}}
+				</section>
+
+				<div class="author-meta">
+					{{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+					{{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+					<span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+				</div>
+			</div>
+		</article>
+	</section>
+
+
+{{/author}}

@@ -717,10 +717,12 @@ img {
    6. Footer
    ========================================================================== */
 .blog-footer {
-  height: 120px;
+  /*height: 190px;*/
+  padding: 0 15px 1px 0px;
   line-height: 120px;
   text-align: center;
-  background: #eee; }
+  background: #eee;
+}
 
 .blog-footer p {
   color: #000; }
@@ -845,7 +847,6 @@ img {
 
 
 
-    /* Wraps the main content & footer */
     .site-wrapper {
         position: relative;
         z-index: 10;
@@ -865,7 +866,6 @@ img {
     }
 
 
-    * Navigation */
     body.nav-opened .nav-cover {
         position: fixed;
         top: 0;
@@ -882,9 +882,8 @@ img {
         bottom: 0;
         z-index: 5;
         width: 240px;
-        /*opacity: 0;*/
+
         background: #000;
-        margin-bottom: 0;
         text-align: left;
         overflow-y: auto;
         -webkit-transition: -webkit-transform 0.5s ease,
@@ -915,6 +914,77 @@ img {
     color:white;
 }
 
-html, body {
+html, .home-template {
 height: 100%;
+}
+
+.nav-title {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.main-nav ul {
+    padding: 90px 9% 5%;
+    list-style: none;
+}
+
+.main-nav li:before {
+    display: block;
+    float: right;
+    padding-right: 4%;
+    padding-left: 5px;
+    text-align: right;
+    font-size: 1.2rem;
+    vertical-align: bottom;
+    color: #B8B8B8;
+}
+.main-nav li {
+    margin: 0;
+}
+.main-nav li a {
+    text-decoration: none;
+    line-height: 1.4;
+    font-size: 1.4rem;
+    display: block;
+    padding: 0.6rem 4%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main-nav li a:after {
+    display: inline-block;
+    color: rgba(255,255,255,0.2);
+    margin-left: 5px;
+}
+.main-nav .nav-current:before {
+    color: #fff;
+}
+.main-nav .nav-current a:after {
+    border-bottom: rgba(255,255,255,0.5) 1px solid;
+    width: 100%;
+    height: 1px;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    color: #B8B8B8;
+}
+
+.main-nav li.nav-current a,
+.main-nav a:hover,
+.main-nav a:active,
+.main-nav a:focus {
+    color: #fff;
+}
+
+
+.nav-title {
+    top: 25px;
+
 }

@@ -40,11 +40,9 @@
     -o-animation:rotate(360deg);
  }
 
- /*body.nav-opened .site-wrapper {
-     overflow-x: hidden;
-     -webkit-transform: translate3D(-240px, 0, 0);
-         -ms-transform: translate3D(-240px, 0, 0);
-             transform: translate3D(-240px, 0, 0);
-     -webkit-transition: -webkit-transform 0.3s ease;
-             transition: transform 0.3s ease;
- }*/
+
+
+.blog-footer  > div >  h1 > p > a {
+    color:#fff;
+    font-weight: 500;
+}

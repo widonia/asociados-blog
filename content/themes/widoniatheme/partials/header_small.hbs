@@ -1,4 +1,4 @@
-<header class="main-header second-header {{#if @blog.cover}}" style="background-image: url({{asset "img/small_header.jpg"}}){{else}}no-cover{{/if}}" >
+<header class="main-header second-header {{#if @blog.cover}}" style="background-image:  url({{@blog.cover}}){{else}}no-cover{{/if}}" >
 	<figure class="logo">
 		{{#if @blog.logo}}<a href="{{@blog.url}}"><img class="img-logo" src="{{@blog.logo}}" alt="Logo Blog"></a>{{/if}}
 	</figure>
@@ -16,9 +16,5 @@
 	        <div class="two"></div>
 	        <div class="three"></div>
 	    </div>
-
-		<div class="">
-
-		</div>
 	 </div>
 </nav>

@@ -1,0 +1,11 @@
+<nav class="main-nav">
+	<h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+		{{#foreach navigation}}
+			<li class="{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="false"}}"><span>{{label}}</span></a></li>
+        {{/foreach}}
+    </ul>
+</nav>
