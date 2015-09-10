@@ -35,11 +35,11 @@ config = {
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
-            debug: false
+            debug: true
         },
         server: {
             host: '127.0.0.1',
-            port: '4500'
+            port: '4700'
         }
     },
 
