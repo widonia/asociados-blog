@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://localhost:2368',
+        url: 'http://www.asociados.com.co/blog',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -27,11 +27,27 @@ config = {
         }
     },
 
+    stage: {
+        url: 'http://54.187.171.36/blog',
+        mail: {},
+        database: {
+            client: 'sqlite3',
+            connection: {
+                filename: path.join(__dirname, '/content/data/ghost.db')
+            },
+            debug: false
+        },
+        server: {
+            host: '127.0.0.1',
+            port: '4500'
+        }
+    },
+
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blog's published URL.
-        url: 'http://localhost:2368',
+        url: 'http://localhost:2368/blog',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions
