@@ -1,12 +1,9 @@
 .second-header {
     padding: 0 0 0 0;
 }
-
-
 .second-header .title  {
     border-bottom: none;
 }
-
 .second-header .title h1 {
   color: #fff;
   margin-bottom: 0;
@@ -16,8 +13,6 @@
   font-weight: 600;
   /*transition: color 0.5s ease-in-out;*/
 }
-
-
 .second-header  .logo {
   width: 70px;
   height: 70px;
@@ -31,7 +26,6 @@
  animation: slideDown 1s ease;
  visibility: visible !important; }
 
-
 .second-header  .logo:hover{
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
@@ -39,8 +33,6 @@
     -moz-animation: rotate(360deg);
     -o-animation:rotate(360deg);
  }
-
-
 
 .blog-footer  > div >  h1 > p > a {
     color:#fff;
