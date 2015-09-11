@@ -28,7 +28,7 @@ config = {
     },
 
     production: {
-        url: 'http://localhost:4700/blog',
+        url: 'http://54.187.171.36/blog',
         mail: {},
         database: {
             client: 'sqlite3',
