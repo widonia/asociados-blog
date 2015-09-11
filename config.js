@@ -10,7 +10,7 @@ config = {
     // ### Production
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
-    production: {
+    production_bad: {
         url: 'http://www.asociados.com.co/blog',
         mail: {},
         database: {
@@ -27,8 +27,8 @@ config = {
         }
     },
 
-    stage: {
-        url: 'http://54.187.171.36/blog',
+    production: {
+        url: 'http://localhost:4700/blog',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -36,6 +36,8 @@ config = {
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: true
+
+
         },
         server: {
             host: '127.0.0.1',
