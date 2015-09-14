@@ -5,20 +5,39 @@
 
 var path = require('path'),
     config;
+try {
+    var CONF = require('./~/.ssh/authorized.json')
+} catch (err){
+   console.log("authorized.json not in correct path.");
+   var CONF = require('./authorized.json');
+}
 
 config = {
     // ### Production
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://54.187.171.36/blog',
-        mail: {},
+        url: 'http://www.asociados.com.co/blog',
+        mail: {
+            transport: 'SMTP',
+            host: 'smtp.mandrillapp.com',
+            options: {
+                service: 'Mandrill',
+                auth: {
+                    user: CONF.EMAIL.USERNAME,
+                    pass: CONF.EMAIL.API_KEY,
+                }
+            }
+        },
         database: {
-            client: 'sqlite3',
+            client: 'pg',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
-            },
-            debug: false
+                host     : CONF.POSTGRES_BLOG.HOST,
+                user     : CONF.POSTGRES_BLOG.USER,
+                password : CONF.POSTGRES_BLOG.PASSWORD,
+                database : CONF.POSTGRES_BLOG.NAME,
+                charset  : 'utf8'
+            }
         },
         server: {
             host: '127.0.0.1',
