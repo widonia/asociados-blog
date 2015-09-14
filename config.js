@@ -11,7 +11,7 @@ try {
    console.log("authorized.json not in correct path.");
     try {
        var CONF = require('./authorized.json');
-    } catch (err){
+   } catch (err2){
         console.log("Not file in path this is production.");
     }
 }
