@@ -9,7 +9,11 @@ try {
     var CONF = require((process.env.HOME || process.env.HOMEPATH) + '/.ssh/authorized.json');
 } catch (err){
    console.log("authorized.json not in correct path.");
-   var CONF = require('./authorized.json');
+    try {
+       var CONF = require('./authorized.json');
+    } catch (err){
+        console.log("Not file in path this is production.");
+    }
 }
 
 config = {
