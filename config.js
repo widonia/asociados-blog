@@ -7,8 +7,9 @@ var path = require('path'),
     config;
 try {
     var CONF = require((process.env.HOME || process.env.HOMEPATH) + '/.ssh/authorized.json');
+    console.log(CONF);
 } catch (err){
-   console.log("authorized.json not in correct path.");
+   console.log("authorized.json not in correct path.", err);
     try {
        var CONF = require('./authorized.json');
    } catch (err2){
