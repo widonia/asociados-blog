@@ -149,7 +149,7 @@ nav.main-menu li:before, nav.main-menu li:last-child:after{
 }
 
 .main-menu ul li {
-    margin-left: 0.9em;
+    /*margin-left: 0.9em;*/
 }
 
 h2, h3, h4, p, a, body{
