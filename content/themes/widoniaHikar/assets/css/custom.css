@@ -151,10 +151,6 @@ nav.main-menu li:before, nav.main-menu li:last-child:after{
   font-size: 2.8rem;
 }
 
-.main-menu ul li {
-    /*margin-left: 0.9em;*/
-}
-
 h2, h3, h4, p, a, body{
   font-family: ‘Metrophobic’, Arial, serif !important;
     font-weight: 400 ;
@@ -167,33 +163,38 @@ h2, h3, h4, p, a, body{
   text-shadow: 1px 0px 1px rgba(108, 202, 168, 0.77);
 }
 
-
 article.post>header h1{
   font-family: ‘Metrophobic’, Arial, serif !important;
   font-weight: 500 ;
   color: #109445;
   text-shadow: 1px 0px 1px rgba(108, 202, 168, 0.77);
 }
+
 a{
   text-decoration: underline;
 }
 
 .post p a {
-  color: #156A9D;
+  color: #109448;
 }
 
 .post > footer > .meta a:hover,  article.post > p > a:hover{
   font-size: 93%;
   font-weight: bold;  
-  color: #0299A2;
+  color: #0D7534;
   text-decoration: underline;
 }
 
 .main_foot  a{
   font-size: 2rem !important;     
   font-weight: bold;
-  color: #FDFAE8 !important;
+  color: #fff;
   text-decoration: none;
+  text-shadow: 1px 0px 1px rgba(118, 128, 91, 1);
+}
+
+.main_foot p{
+  color: #fff;
 }
 
 
