@@ -14,6 +14,26 @@ try {
        var CONF = require('./authorized.json');
    } catch (err2){
         console.log("Not file in path this is production.");
+        var CONF = {
+            "S3": {
+                "key": null,
+                "secret": null,
+                "bucket": null,
+                "region": null
+            },
+            "POSTGRES_BLOG":{
+                "NAME": null,
+                "USER": null,
+                "PASSWORD": null,
+                "HOST": null
+            },
+            "EMAIL": {
+                "USERNAME": null,
+                "API_KEY": null,
+                "SERVER_EMAIL": null,
+                "DEFAULT_FROM": null
+            }
+        }
     }
 }
 
