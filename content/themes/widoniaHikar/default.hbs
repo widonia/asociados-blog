@@ -12,7 +12,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="shortcut iconn" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
@@ -36,12 +36,18 @@
             <a class="facebook" href="https://twitter.com/Asociados_App"><span>Asociados</span></a>
         </p>
 
-        <p>&copy; {{date format="YYYY"}} {{@blog.title}}. All rights reserved.<br>
-        <p> <a href="https://www.asociados.com.co">Asociados.com.co</a></p>
+        <div class="main_foot">
+            {{! Ghost outputs important scripts and data with this tag }}
+            {{ghost_foot}}
+            <p>
+                &copy; {{date format="YYYY"}} {{@blog.title}}. All rights reserved.
+            </p>
+            <a href="http://www.asociados.com.co">Asociados.com.co</a>
+        </div>
+
     </footer>
 
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
+
 
     {{! Forwards compatibility regarding jQuery }}
     <script type="text/javascript">
