@@ -2,7 +2,9 @@
   text-align: center;
   padding: 5px 0 10px 0;
   background: rgba(130, 207, 208, 0.6) center center;
-  background-size: cover; }
+  background-size: cover; 
+  background-color: #2FCBC8 !important;
+}
 
 .main-header .logo {
   width: 150px;
@@ -44,6 +46,7 @@
 
 .second-header {
   padding: 0 0 0 0;
+  background-color: #2FCBC8 !important;
 }
 .second-header .title  {
   border-bottom: none;
@@ -164,12 +167,34 @@ h2, h3, h4, p, a, body{
   text-shadow: 1px 0px 1px rgba(108, 202, 168, 0.77);
 }
 
+
 article.post>header h1{
   font-family: ‘Metrophobic’, Arial, serif !important;
   font-weight: 500 ;
   color: #109445;
   text-shadow: 1px 0px 1px rgba(108, 202, 168, 0.77);
 }
+a{
+  text-decoration: underline;
+}
+
+.post p a {
+  color: #0299A2;
+}
+
+.post > footer > .meta a:hover,  article.post > p > a:hover{
+  font-size: 93%;
+  font-weight: bold;  
+  color: #156A9D;
+  text-decoration: underline;
+}
+
+.main-footer p {
+  font-size: 2rem !important;     
+  font-weight: bold;
+  color: #0299A2 !important;
+}
+.main-footer 
 
 /* ==========================================================================
 7. Media Queries
