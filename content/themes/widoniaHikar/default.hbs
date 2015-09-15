@@ -30,7 +30,7 @@
     {{! Everything else gets inserted here }}
     {{{body}}}
 
-    <footer class="main-footer">
+    <footer class="main-footer" style="{{#if @blog.cover}}background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
         <p>
             <a class="twitter" href="https://twitter.com/Asociados_App"><span>@Asociados_App</span></a>
             <a class="facebook" href="https://twitter.com/Asociados_App"><span>Asociados</span></a>
