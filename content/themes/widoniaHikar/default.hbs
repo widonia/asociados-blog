@@ -30,18 +30,24 @@
     {{! Everything else gets inserted here }}
     {{{body}}}
 
-    <!-- <footer class="main-footer">
+    <footer class="main-footer">
         <p>
             <a class="twitter" href="https://twitter.com/Asociados_App"><span>@Asociados_App</span></a>
             <a class="facebook" href="https://twitter.com/Asociados_App"><span>Asociados</span></a>
         </p>
 
-        <p>&copy; {{date format="YYYY"}} {{@blog.title}}. All rights reserved.<br>
-        <p> <a href="http://www.asociados.com.co">Asociados.com.co</a></p>
-    </footer> -->
+        <div class="main_foot">
+            {{! Ghost outputs important scripts and data with this tag }}
+            {{ghost_foot}}
+            <p>
+                &copy; {{date format="YYYY"}} {{@blog.title}}. All rights reserved.
+            </p>
+            <a href="http://www.asociados.com.co">Asociados.com.co</a>
+        </div>
 
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
+    </footer>
+
+
 
     {{! Forwards compatibility regarding jQuery }}
     <script type="text/javascript">
