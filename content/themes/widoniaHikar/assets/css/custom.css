@@ -179,22 +179,23 @@ a{
 }
 
 .post p a {
-  color: #0299A2;
+  color: #156A9D;
 }
 
 .post > footer > .meta a:hover,  article.post > p > a:hover{
   font-size: 93%;
   font-weight: bold;  
-  color: #156A9D;
+  color: #0299A2;
   text-decoration: underline;
 }
 
-.main-footer p {
+.main_foot  a{
   font-size: 2rem !important;     
   font-weight: bold;
-  color: #0299A2 !important;
+  color: #FDFAE8 !important;
+  text-decoration: none;
 }
-.main-footer 
+
 
 /* ==========================================================================
 7. Media Queries
